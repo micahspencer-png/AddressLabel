@@ -28,18 +28,56 @@
         /// </summary>
         private void InitializeComponent()
         {
+            label1 = new Label();
+            textBox1 = new TextBox();
+            DisplayText = new Label();
             SuspendLayout();
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(41, 49);
+            label1.Name = "label1";
+            label1.Size = new Size(50, 20);
+            label1.TabIndex = 0;
+            label1.Text = "label1";
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(97, 46);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(125, 27);
+            textBox1.TabIndex = 1;
+            // 
+            // DisplayText
+            // 
+            DisplayText.AutoSize = true;
+            DisplayText.BorderStyle = BorderStyle.FixedSingle;
+            DisplayText.Font = new Font("Times New Roman", 20F);
+            DisplayText.Location = new Point(430, 109);
+            DisplayText.MaximumSize = new Size(1000, 1000);
+            DisplayText.Name = "DisplayText";
+            DisplayText.Size = new Size(2, 41);
+            DisplayText.TabIndex = 2;
             // 
             // AddressLabel
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(DisplayText);
+            Controls.Add(textBox1);
+            Controls.Add(label1);
             Name = "AddressLabel";
             Text = "Address Label";
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Label label1;
+        private TextBox textBox1;
+        private Label DisplayText;
     }
 }

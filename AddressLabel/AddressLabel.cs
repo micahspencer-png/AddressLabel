@@ -14,9 +14,9 @@ namespace AddressLabel
                 MessageBox.Show(EvaluateFields());
             }
 
-            else 
-            {
-                DisplayText.Text = $"{FirstNametextbox.Text} {LastNametextbox.Text} \n{StreetAddresstextbox.Text} \n{Citytextbox.Text}, {Statetextbox.Text} {Zipcodetextbox.Text}";
+            else if (EvaluateFields() == "")
+            { 
+                 DisplayText.Text = $"{FirstNametextbox.Text} {LastNametextbox.Text} \n{StreetAddresstextbox.Text} \n{Citytextbox.Text}, {Statetextbox.Text} {Zipcodetextbox.Text}";
             }
         }
 

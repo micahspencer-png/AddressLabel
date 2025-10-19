@@ -1,5 +1,11 @@
 namespace AddressLabel
 {
+    //Micah Spencer
+    //RCET2265
+    //Fall 2025
+    //Address Label Program
+    //https://github.com/micahspencer-png/AddressLabel.git
+
     public partial class AddressLabel : Form
     {
         public AddressLabel()

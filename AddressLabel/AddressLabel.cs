@@ -60,15 +60,23 @@ namespace AddressLabel
                 message += "First Name is Required\n";
             }
 
-            string[] messageArray;
-            messageArray = message.Split("\n");
-            message = "";
-            for (int i = messageArray.GetUpperBound(0); i >= 0; i--)
+
+            if (message != "")
             {
-                message += messageArray[i] + "\n";
+                string[] messageArray;
+                messageArray = message.Split("\n");
+                message = "";
+                for (int i = messageArray.GetUpperBound(0); i >= 0; i--)
+                {
+                    message += messageArray[i] + "\n";
+                }
+            }
+            else 
+            {
+                message = "";
             }
 
-            return message;
+                return message;
         }
 
         private void DisplayLabel_Click(object sender, EventArgs e)

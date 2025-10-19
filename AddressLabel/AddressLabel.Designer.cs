@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             label1 = new Label();
             FirstNametextbox = new TextBox();
             DisplayText = new Label();
@@ -44,6 +45,7 @@
             Exit = new Button();
             Clear = new Button();
             DisplayLabel = new Button();
+            toolTip1 = new ToolTip(components);
             SuspendLayout();
             // 
             // label1
@@ -158,7 +160,8 @@
             Exit.Name = "Exit";
             Exit.Size = new Size(133, 49);
             Exit.TabIndex = 3;
-            Exit.Text = "Exit";
+            Exit.Text = "E&xit";
+            toolTip1.SetToolTip(Exit, "Closes the Program");
             Exit.UseVisualStyleBackColor = true;
             Exit.Click += Exit_Click;
             // 
@@ -168,7 +171,8 @@
             Clear.Name = "Clear";
             Clear.Size = new Size(133, 49);
             Clear.TabIndex = 3;
-            Clear.Text = "Clear";
+            Clear.Text = "&Clear";
+            toolTip1.SetToolTip(Clear, "Clears the Display");
             Clear.UseVisualStyleBackColor = true;
             Clear.Click += Clear_Click;
             // 
@@ -178,7 +182,8 @@
             DisplayLabel.Name = "DisplayLabel";
             DisplayLabel.Size = new Size(133, 49);
             DisplayLabel.TabIndex = 3;
-            DisplayLabel.Text = "Display Label";
+            DisplayLabel.Text = "&Display Label";
+            toolTip1.SetToolTip(DisplayLabel, "Displays text as Address Label");
             DisplayLabel.UseVisualStyleBackColor = true;
             DisplayLabel.Click += DisplayLabel_Click;
             // 
@@ -227,5 +232,6 @@
         private Button Exit;
         private Button Clear;
         private Button DisplayLabel;
+        private ToolTip toolTip1;
     }
 }
